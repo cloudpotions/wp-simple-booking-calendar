@@ -1,5 +1,19 @@
 My fork adds URL Cron Job to force refresh ical feeds if you are having problems with the Internal iCal Refresh times in the Settings/General and iCal Refresh Times section. Check out the wpsbc-ical-url-refresh.md first for instructions
 
+If you have your Wordpress Themes Auto-Updated and are planning on Exporting your ical Events,  I would highly reccomend installing WP Code Plugin (Free) and adding the PHP snippet below, if you do not, when your theme is updated or your WP Simple Calendar Plugin is updated, you will lose this functionality! Some of the functions I use to tweak my WP Simple Calendar are below:
+
+```
+// Manual add: Include icalendar events in export file
+add_filter('wpsbc_export_calendar_include_icalendar_events', function(){ return true; });
+//  Manual add: Disable past months in the months selector   --Single Calendar
+add_filter('wpsbc_calendar_output_month_selector_hide_past_months', 'wpsbc_custom_selector_past_months', 10, 1);
+//  Manual add: Disable past months in the months selector   --Overview Calendar
+add_filter('wpsbc_calendar_overview_output_month_selector_hide_past_months', 'wpsbc_custom_selector_past_months', 10, 1);
+// Manual add: Disable past months in the months selector    --add function
+function wpsbc_custom_selector_past_months(){ return false; }
+```
+
+
 
 === WP Simple Booking Calendar ===
 Contributors: Bryght, BestWebSoft
