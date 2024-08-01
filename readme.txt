@@ -1,3 +1,6 @@
+My fork adds URL Cron Job to force refresh ical feeds if you are having problems with the Internal iCal Refresh times in the Settings/General and iCal Refresh Times section. Check out the wpsbc-ical-url-refresh.md first for instructions
+
+
 === WP Simple Booking Calendar ===
 Contributors: Bryght, BestWebSoft
 Tags: booking calendar, bookings, booking, bookable, calendar, availability calendar, availability, reservation calendar, reservations, scheduling, schedule, rooms, hotel, holiday home, accommodations, dateblocker, date blocker, bed and breakfast, belegungsplan, beschikbaarheidskalender
