@@ -30,7 +30,7 @@ function wpsbc_custom_selector_past_months(){ return false; }
 
 ## Usage
 
-### Using a Control Panel (Plesk or cPanel)
+### Using a Control Panel (Plesk or cPanel, etc)
 
 1. Access your hosting control panel (Plesk or cPanel).
 2. Navigate to the Cron Jobs or Scheduled Tasks section.
