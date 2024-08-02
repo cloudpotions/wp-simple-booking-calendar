@@ -1,7 +1,30 @@
-My fork adds URL Cron Job to force refresh ical feeds if you are having problems with the Internal iCal Refresh times in the Settings/General and iCal Refresh Times section. Check out the wpsbc-ical-url-refresh.md first for instructions
+OTA CHANNEL MANAGER ALERT... 
 
-If you have your Wordpress Themes Auto-Updated and are planning on Exporting your ical Events,  I would highly reccomend installing WP Code Plugin (Free) and adding the PHP snippet below, if you do not, when your theme is updated or your WP Simple Calendar Plugin is updated, you will lose this functionality! Some of the functions I use to tweak my WP Simple Calendar are below:
+My fork introduces a URL Cron Job to refresh iCal feeds, addressing issues with the internal iCal refresh intervals found in Settings > General > iCal Refresh Times.
 
+For detailed setup instructions, please refer to the wpsbc-ical-url-refresh.md file.
+
+Recommended Setup for Auto-Updating WordPress Themes
+If you have WordPress themes set to auto-update and plan on exporting your iCal events, I highly recommend installing the WPCode Plugin (Free) and adding the PHP snippet provided below. This ensures that the URL Cron Job functionality is retained even after updates to your theme or the WP Simple Calendar Plugin.
+
+Here’s the crucial PHP snippet you need to add:
+
+// Manual add: Include icalendar events in export file
+add_filter('wpsbc_export_calendar_include_icalendar_events', function() {
+    return true;
+});
+
+This filter ensures that iCalendar events are included in the export file, which is essential for maintaining the integrity of your data during exports.
+
+Additionally, I use several other functions to enhance the user experience in the WP Simple Calendar Plugin. In WPCode, ensure you:
+
+•	Add the code as a PHP Snippet
+•	Select Auto Insert as the insert method
+•	Set the location to Run Everywhere
+
+By following these steps, you can prevent loss of functionality after updates and improve your overall experience with the WP Simple Calendar Plugin.
+
+Additionally, I use several other functions to enhance the user experience in the WP Simple Calendar Plugin. Here are the recommended tweaks I use with WP Code Snippet (you can put them all in one snippet) 
 
 // Manual add: Include icalendar events in export file
 add_filter('wpsbc_export_calendar_include_icalendar_events', function(){ return true; });
@@ -12,8 +35,14 @@ add_filter('wpsbc_calendar_overview_output_month_selector_hide_past_months', 'wp
 // Manual add: Disable past months in the months selector    --add function
 function wpsbc_custom_selector_past_months(){ return false; }
 
+In WPCode, ensure you:
 
+Add the code as a PHP Snippet
+Select Auto Insert as the insert method
+Set the location to Run Everywhere
+These tweaks provide additional functionality and improve the user experience by showing past events, setting the default view to the month, and displaying multiple months in the calendar.
 
+By following these steps, you can prevent loss of functionality after updates and enhance your overall experience with the WP Simple Calendar Plugin.
 
 === WP Simple Booking Calendar ===
 Contributors: Bryght, BestWebSoft
