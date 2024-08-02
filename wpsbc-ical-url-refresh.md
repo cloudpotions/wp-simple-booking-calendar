@@ -4,7 +4,7 @@ This addition to the WP Simple Booking Calendar plugin allows for automated refr
 
 This approach will:
 
-Automatically refresh all iCal feeds for all calendars every hour.
+Automatically refresh all iCal feeds for all calendars (based on the cron interval you select). 
 Not require modifying any existing plugin files.
 Be secure because it uses a secret key.
 Continue to work even if the plugin is updated.
