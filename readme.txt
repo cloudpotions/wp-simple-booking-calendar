@@ -40,7 +40,6 @@ In WPCode, ensure you:
 Add the code as a PHP Snippet
 Select Auto Insert as the insert method
 Set the location to Run Everywhere
-These tweaks provide additional functionality and improve the user experience by showing past events, setting the default view to the month, and displaying multiple months in the calendar.
 
 By following these steps, you can prevent loss of functionality after updates and enhance your overall experience with the WP Simple Calendar Plugin.
 
