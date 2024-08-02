@@ -4,10 +4,11 @@ This addition to the WP Simple Booking Calendar plugin allows for automated refr
 
 This approach will:
 
-Automatically refresh all iCal feeds for all calendars (based on the cron interval you select). 
-Not require modifying any existing plugin files.
-Be secure because it uses a secret key.
-Continue to work even if the plugin is updated.
+•	Automatically refresh all iCal feeds for all calendars (based on the cron interval you select). <br>
+•	Not require modifying any existing plugin files.<br>
+•	Be secure because it uses a secret key.<br>
+•	Continue to work even if the plugin is updated.
+
 
 If you have your Wordpress Themes Auto-Updated and are planning on Exporting your ical Events,  I would highly reccomend installing WP Code Plugin (Free) and adding the PHP snippet below, if you do not, when your theme is updated or your WP Simple Calendar Plugin is updated, you will lose this functionality! Some of the functions I use to tweak my WP Simple Calendar are below (I selected PHP Snippet, Run Everywhere, and Auto-Insert options when making a snippet in WP Code, now I can update theme and WP Simple Plugin without any worries). 
 
