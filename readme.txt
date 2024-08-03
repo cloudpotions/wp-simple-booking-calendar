@@ -1,6 +1,7 @@
-OTA CHANNEL MANAGER ALERT... 
-
-My fork introduces a URL Cron Job to refresh iCal feeds, addressing issues with the internal iCal refresh intervals found in Settings > General > iCal Refresh Times.
+This fork introduces a URL Cron Job to refresh iCal feeds (wpsbc-ical-url-refresh.php), addressing limitations with the internal iCal refresh intervals in Settings > General > iCal Refresh Times.
+Note: Tested on the official WordPress plugin, not the GitHub repo (which appears outdated).
+WP Simple Booking Calendar significantly improved my business operations. While I considered creating a separate plugin, I chose to contribute directly to benefit the community.
+This addition aims to help users seeking a solution for iCal refresh issues in WP Simple Booking Calendar.
 
 For detailed setup instructions, please refer to the wpsbc-ical-url-refresh.md file.
 
